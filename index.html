@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Command-Line Git</title>
+</head>
+<body>
+<a href='http://gitref.org/'>http://gitref.org/</a>
+<pre>
+To clone wakarimasu (a public repo)
+git clone https://github.com/whitespace-software/wakarimasu
+
+To clone gala (a public repo)
+git clone https://github.com/whitespace-software/gala ... will ask for credentials
+
+To initialise a Git repo in current directory
+git init 
+
+To see the current status
+git status -s
+
+To add some files, including modified ones that have been added before
+git add file1 ... fileN
+git add . ... adds all files in this folder
+
+To see differences
+git diff
+git diff --stat
+
+To set credentials for a commit
+git config --global user.name 'AJC'
+git config --global user.email 'jonathan@bitwix.com'
+
+To commit the changes, adding -a to do the add as well
+git commit -m "more lines in HTML"
+git commit -am "more lines in HTML"
+
+To see the details of the GitHub repo
+git remote ... blank
+git remote -v ... blank
+git remote add github https://github.com/whitespace-software/konnichiwa
+git remote ... now lists github
+
+It may not be possible to create new GitHub repos from the command-line without using the website
+https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/ 
+is a mixture of website and command line
+
+To push up to the GitHub repo (as long as the repo already exists)
+git push github master ... will ask for credentials
+
+</pre>
+</body>
+</html>
