@@ -1,53 +1,77 @@
 <html>
 <head>
 <title>Command-Line Git</title>
+<style>
+.cmd
+{
+	border:solid 3px #ccffcc;
+	background-color:#eeffee;
+	padding:10px;
+	font-family:Courier New;
+	font-size:0.8em;
+	margin-bottom:1em;
+	border-radius:6px;
+}
+.comment
+{
+	font-style:italic;
+}
+.comment::before
+{
+	content: " ... ";
+
+}
+</style>
 </head>
 <body>
-<a href='http://gitref.org/'>http://gitref.org/</a>
-<pre>
+<div>I worked through <a href='http://gitref.org/'>http://gitref.org/</a></div>
 To clone wakarimasu (a public repo)
-git clone https://github.com/whitespace-software/wakarimasu
-
+<div class='cmd'>git clone https://github.com/whitespace-software/wakarimasu</div>
 To clone gala (a public repo)
-git clone https://github.com/whitespace-software/gala ... will ask for credentials
+<div class='cmd'>git clone https://github.com/whitespace-software/gala <span class='comment'>will ask for credentials</span></div>
 
 To initialise a Git repo in current directory
-git init 
+<div class='cmd'>git init</div>
 
 To see the current status
-git status -s
+<div class='cmd'>git status -s</div>
 
 To add some files, including modified ones that have been added before
-git add file1 ... fileN
-git add . ... adds all files in this folder
+<div class='cmd'>git add file1 ... fileN<br/>
+git add . ... adds all files in this folder</div>
 
 To see differences
-git diff
-git diff --stat
+<div class='cmd'>git diff<br/>
+git diff --stat</div>
 
 To set credentials for a commit
-git config --global user.name 'AJC'
-git config --global user.email 'jonathan@bitwix.com'
-git config --global user.name ... to see the current value of user.name
+<div class='cmd'>git config --global user.name 'AJC'<br/>
+git config --global user.email 'jonathan@bitwix.com'<br/>
+git config --global user.name <span class='comment'>to see the current value of user.name</span></div>
 
 To commit the changes, adding -a to do the add as well
-git commit -m "more lines in HTML"
-git commit -am "more lines in HTML"
+<div class='cmd'>git commit -m "more lines in HTML"<br/>
+git commit -am "more lines in HTML"</div>
 
 To see the details of the GitHub repo
-git remote ... blank
-git remote -v ... blank
-git remote add github https://github.com/whitespace-software/konnichiwa
-git remote ... now lists github
-git remote remove github ... to remove that name
+<div class='cmd'>git remote ... blank<br/>
+git remote -v ... blank<br/>
+git remote add github https://github.com/whitespace-software/HowToUseGit<br/>
+git remote ... now lists github<br/>
+git remote remove github ... to remove that name</div>
 
+<p>
 It may not be possible to create new GitHub repos from the command-line without using the website
-https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/ 
+<a href='https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/'>https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/</a>
 is a mixture of website and command line
+</p>
 
 To push up to the GitHub repo (as long as the repo already exists)
-git push github master ... will ask for credentials
+<div class='cmd'>git push github master ... will ask for credentials</div>
 
-</pre>
+
+
+
+
 </body>
 </html>
