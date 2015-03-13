@@ -12,6 +12,11 @@
 	margin-bottom:1em;
 	border-radius:6px;
 }
+.warning
+{
+	font-weight:bold;
+	color:#f66;
+}
 .comment
 {
 	font-style:italic;
@@ -30,6 +35,7 @@
 </style>
 </head>
 <body>
+<h1>How To Use Git</h1>
 <div>I worked through <a href='http://gitref.org/'>http://gitref.org/</a></div>
 To clone wakarimasu (a public repo)
 <div class='cmd'>git clone https://github.com/whitespace-software/wakarimasu</div>
@@ -78,8 +84,12 @@ is a mixture of website and command line
 To push up to the GitHub repo (as long as the repo already exists)
 <div class='cmd'>git push github master ... will ask for credentials</div>
 
+To reset to a previous commit point <span class='warning'>dangerous!</span>
+<div class='cmd'>git reset --hard [old-commit-id]<br/>
+git push -f origin master</div>
+
 <div class='footer'>
-ajc 17/02/2015
+ajc 13/03/2015
 </div>
 
 
