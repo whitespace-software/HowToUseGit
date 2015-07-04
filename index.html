@@ -69,11 +69,12 @@ To commit the changes, adding -a to do the add as well
 git commit -am "more lines in HTML"</div>
 
 To see the details of the GitHub repo
-<div class='cmd'>git remote ... blank<br/>
+<div class='cmd'>git remote ... blank ... if it says origin then see below for going straight to push<br/>
 git remote -v ... blank<br/>
 git remote add github https://github.com/whitespace-software/HowToUseGit<br/>
 git remote ... now lists github<br/>
-git remote remove github ... to remove that name</div>
+git remote remove github ... to remove that name
+</div>
 
 <p>
 It may not be possible to create new GitHub repos from the command-line without using the website
@@ -82,7 +83,11 @@ is a mixture of website and command line
 </p>
 
 To push up to the GitHub repo (as long as the repo already exists)
-<div class='cmd'>git push github master ... will ask for credentials</div>
+<div class='cmd'>
+git push github master ... will ask for credentials
+- or -
+git push origin master ... if the git remote was set by default to origin
+</div>
 
 To reset to a previous commit point <span class='warning'>dangerous!</span>
 <div class='cmd'>git reset --hard [old-commit-id]<br/>
