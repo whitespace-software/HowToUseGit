@@ -9,7 +9,7 @@
 	padding:10px;
 	font-family:Courier New;
 	font-size:0.8em;
-	margin-top:0.1em;
+	margin-top:0.2em;
 	margin-bottom:1em;
 	border-radius:6px;
 }
@@ -93,6 +93,12 @@ git push origin master ... if the git remote was set by default to origin
 To reset to a previous commit point <span class='warning'>dangerous!</span>
 <div class='cmd'>git reset --hard [old-commit-id]<br/>
 git push -f origin master</div>
+
+<h3>Windows Tips</h3>
+<p>Use a shell like Git Bash</p>
+<p>To store credentials:</p>
+<div class='cmd'>
+git config --global credential.helper wincred</div>
 
 <div class='footer'>
 ajc 13/03/2015
